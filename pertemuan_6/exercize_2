@@ -1,0 +1,16 @@
+//1. life
+const jumlah = (function (tinggi,berat) {
+    let BMI = berat / (tinggi * tinggi);
+    return BMI;
+})(1.7,70);
+console.log(jumlah);
+//2. callback
+function jumlah(tinggi,berat,callback) {
+    let BMI = berat / (tinggi * tinggi);
+    callback (BMI);
+};
+let berat = 70
+let tinggi = 1.7
+jumlah(tinggi,berat,function (output) {
+    console.log(output);
+});

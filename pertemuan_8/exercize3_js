@@ -1,0 +1,26 @@
+let BMI = {
+    FirstName: "Christa Tumbol",
+    weight: 40,
+    height: 1.55,
+    calculate: function (){
+        let BMI1 = This.berat / (tinggi * tinggi)
+        console.log("bmi =" + BMI1);
+        if (BMI1 <= 16.0) {
+            console.log("severely underweight");
+        }else if (BMI1 >= 16.0 && BMI1 <= 18.4) {
+            console.log("underweight")
+        }else if (BMI1 >= 18.5 && BMI1 <= 24.9) {
+            console.log("normal")
+        }else if (BMI1 >= 25.0 && BMI1 <= 29.9) {
+            console.log("overweight");
+        }else if (BMI1 >= 30.0 && BMI1 <= 34.9) {
+            console.log("moderately obese");
+        }else if (BMI1 >= 35.0 && BMI1 <= 39.9) {
+            console.log("severly obese");
+        }else if (BMI1 >= 40.0) {
+            console.log("mordidly obese");
+        }
+    },
+};
+console.log(BMI);
+console.log(BMI.calculate);
